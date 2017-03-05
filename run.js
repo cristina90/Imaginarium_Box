@@ -9,7 +9,8 @@
  */
 
 /* eslint-disable no-console, global-require */
-
+"use strict";
+const path = require('path');
 const fs = require('fs');
 const del = require('del');
 const ejs = require('ejs');
@@ -152,46 +153,22 @@ tasks.set('start', () => {
 });
 
 tasks.set('publish', () => {
-  const remote = {
-    url: 'https://github.com/cristina90/Imaginarium_Box', // TODO: Update deployment URL
-    branch: 'gh-pages',
-  };
+  const ghPages = require('gh-pages');
   global.DEBUG = process.argv.includes('--debug') || false;
-  const spawn = require('child_process').spawn;
-  const path = require('path');
-  const opts = { cwd: path.resolve(__dirname, './build'), stdio: ['ignore', 'inherit', 'inherit'] };
-  const git = (...args) => new Promise((resolve, reject) => {
-    console.log("pre");
-    spawn('git', args, opts).on('close', code => {
-      console.log(code);
-      if (code === 0) {
-        resolve();
+  const publish = (dir) => new Promise((resolve, reject) => {
+    ghPages.publish(dir, {}, (err) => {
+      if (err) {
+        reject();
       } else {
-        reject(new Error(`git ${args.join(' ')} => ${code} (error)`));
+        resolve();
       }
     });
   });
 
   return Promise.resolve()
     .then(() => run('clean'))
-    .then(() => git('init', '--quiet'))
-    .then(() => git('config', '--get', 'remote.origin.url')
-      .then(() => git('remote', 'set-url', 'origin', remote.url))
-      .catch(() => git('remote', 'add', 'origin', remote.url))
-    )
-    .then(() => git('ls-remote', '--exit-code', remote.url, 'master')
-      .then(() => Promise.resolve()
-        .then(() => git('fetch', 'origin'))
-        .then(() => git('reset', `origin/${remote.branch}`, '--hard'))
-        .then(() => git('clean', '--force'))
-      )
-      .catch(() => Promise.resolve())
-    )
     .then(() => run('build'))
-    .then(() => git('add', '.', '--all'))
-    .then(() => git('commit', '--message', new Date().toUTCString())
-      .catch(() => Promise.resolve()))
-    .then(() => git('push', 'origin', `HEAD:${remote.branch}`, '--force', '--set-upstream'));
+    .then(() => publish(path.join(__dirname, 'public')));
 });
 
 // Execute the specified task or default one. E.g.: node run build
