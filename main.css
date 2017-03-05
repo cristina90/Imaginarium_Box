@@ -1,0 +1,131 @@
+body {
+    text-align: center;
+}
+
+.logo img {
+    width: 20%;
+}
+
+#menu {
+    display: inline-block;
+    text-align: center;
+    margin: 30px auto 20px auto;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+    max-width: 320px;
+    padding: 0;
+}
+
+#menu a{
+    padding: 0 11px 0;
+    color: #000;
+}
+
+#menu a:hover{
+    background-color: #ffffff;
+    color: #e8d27e;
+}
+
+.footer {
+    background-color: black;
+}
+.footer_social {
+    border-bottom: 1px dashed #e8d27e;
+    padding-bottom: 20px;
+    margin-top: 30px;
+}
+.footer_social a {
+    margin: 7px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: 2px solid #e8d27e;
+    line-height: 40px;
+    -webkit-box-shadow: 0 0 0 7px transparent;
+    box-shadow: 0 0 0 7px transparent;
+    -webkit-transition: all 0.35s ease-in-out;
+    transition: all 0.35s ease-in-out;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.footer_social i {
+    color: white;
+}
+.footer_social a:hover {
+    background: #e8d27e;
+    border: 2px solid #e8d27e;
+    -webkit-box-shadow: 0 0 0 0 #e8d27e;
+    box-shadow: 0 0 0 0 #e8d27e;
+}
+
+
+
+
+.form-group label {
+    display: block;
+    font-weight: 400;
+    font-size: 14px
+}
+
+.form-group input {
+    width: 420px;
+    max-width: 100%;
+    display: inline-block;
+    position: relative;
+    background: #fff;
+    border: 1px solid #999;
+    padding: 0 4px 0 55px;
+    outline: none;
+    height: 30px;
+    box-shadow: 1px 1px 1px #ccc;
+    font-size: 13px;
+    margin-bottom: 13px;
+    /*border-radius: 5px;*/
+}
+
+.form-group textarea {
+    width: 420px;
+    max-width: 100%;
+    display: inline-block;
+    position: relative;
+    background: #fff;
+    border: 1px solid #999;
+    padding: 6px 4px 0 55px;
+    outline: none;
+    height: 120px;
+    font-size: 13px;
+    box-shadow: 1px 1px 1px #ccc;
+    /*border-radius: 5px;*/
+}
+
+.btn {
+    background-color: #e8d27e;
+    width: 127px;
+    height: 50px;
+    font-size: 20px;
+    border: 1px solid #999;
+    box-shadow: 1px 1px 1px 1px #ccc;
+    margin-bottom: 30px;
+}
+
+.btn:hover {
+    border: 1px solid #999;
+    box-shadow: 1px 2px 1px #ccc;
+    background: Black;
+}
+
+.form-group .input-group-addon {
+    display: inline;
+    position: absolute;
+    z-index: 999;
+    height: 30px;
+    width: 50px;
+    border: 1px solid #999;
+    color: black;
+    /*padding: 15px;*/
+}
+
+.input-group-addon.last {
+    height: 120px;
+}

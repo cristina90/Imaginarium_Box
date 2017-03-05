@@ -3,8 +3,109 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="main.css" rel="stylesheet" type="text/css"/>
+    <script src="main.js"></script>
 </head>
 <body>
+<div class=" container">
+    <!--head-->
+    <div id="header">
+        <div class="logo">
+            <img src="images/logo_box.png">
+            <p>Imaginarium Box</p>
+        </div>
+        <nav>
+            <div id="menu">
+                <ul class="nav navbar-nav">
+                    <li><a href="home.html" class="active">Home</a></li>
+                    <li role="presentation"><a href="about.html" class="active">About</a></li>
+                    <li role="presentation"><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li role="presentation"><a href="contact.html" class="active">Contact</a></li>
+                    <li role="presentation"><a href="blog.html" class="active">Blog</a></li>
+                </ul>
+            </div>
 
+        </nav>
+
+    </div>
+    <!--end head-->
+
+    <div class="page_contact">
+        <h4>Text me</h4>
+
+        <form class="group">
+            <div class="form-group">
+                <!--<label for="uname">Your name</label>-->
+                <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                <input type="text" name="uname" id="uname" placeholder="your name">
+
+            </div>
+            <div class="form-group ">
+                <!--<label for="uemail">Your email</label>-->
+                <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
+                <input type="text" name="uemail" id="uemail" placeholder="Email adress">
+            </div>
+            <div class="form-group ">
+                <!--<label for="umessage">Your message</label>-->
+                <div class="input-group-addon last"><i class="fa fa-pencil"></i></div>
+                <textarea name="umessage" id="umessage" placeholder="your message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-info">Submit</button>
+        </form>
+    </div><!--page_contact-->
+
+    <div class="details container-fluid">
+        <div class="container">
+            <h1>Contact me</h1>
+
+            <div class="adress col-md-4 col-sm-12 col-xs-12">
+                <i class="circled-icon icon-color2 fa fa-map-marker"></i>
+
+                <h3>Adress</h3>
+
+                <p>London</p>
+            </div>
+            <div class="phone col-md-4 col-sm-12 col-xs-12">
+                <i class="circled-icon icon-color2 fa fa-phone"></i>
+
+                <h3>My Phone</h3>
+
+                <p>+(44) 79xx xxxxxx</p>
+            </div>
+            <div class="social col-md-4 col-sm-12 col-xs-12 ">
+                <a href="#"><i class="fa fa-envelope-o"></i></a>
+                <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+    <!--details-->
+    <!--footer-->
+    <div class="container-fluid">
+        <div id="footer">
+            <div class="footer_social">
+                <a href="#"><i class="fa fa-envelope-o"></i></a>
+                <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-8 text-left">
+                <h6>Copyright © 2017 Imaginarium Box.</h6>
+            </div>
+        </div>
+    </div>
+    <!--end footer-->
+
+</div><!--container-->
 </body>
 </html>
