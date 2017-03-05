@@ -1,0 +1,3 @@
+[submodule "static-html-pages"]
+	path = static-html-pages
+	url = git@github.com:cristina90/Imaginarium_Box.git
