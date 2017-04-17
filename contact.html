@@ -5,6 +5,7 @@
     <title></title>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -20,7 +21,7 @@
     <!--head-->
     <div id="header">
         <div class="logo">
-            <img src="images/logo_box.png">
+            <img src="images/logo.png">
             <p>Imaginarium Box</p>
         </div>
         <nav>
@@ -28,7 +29,8 @@
                 <ul class="nav navbar-nav">
                     <li><a href="home.html" class="active">Home</a></li>
                     <li role="presentation"><a href="about.html" class="active">About</a></li>
-                    <li role="presentation"><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li role="presentation"><a href="portfolio.html" class="active">Wedding Dresses</a></li>
+                    <li role="presentation"><a href="haute_couture.html" class="active">Haute Couture</a></li>
                     <li role="presentation"><a href="contact.html" class="active">Contact</a></li>
                     <li role="presentation"><a href="blog.html" class="active">Blog</a></li>
                 </ul>
@@ -40,56 +42,44 @@
     <!--end head-->
 
     <div class="page_contact">
-        <h4>Text me</h4>
+        <div class="contactinfo col-md-6 col-sm-6 col-xs-12"><h3>Let's get in touch</h3>
 
-        <form class="group">
-            <div class="form-group">
-                <!--<label for="uname">Your name</label>-->
-                <div class="input-group-addon"><i class="fa fa-user"></i></div>
-                <input type="text" name="uname" id="uname" placeholder="your name">
+            <form class="group">
+                <div class="form-group">
+                    <!--<label for="uname">Your name</label>-->
+                    <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                    <input type="text" name="uname" id="uname" placeholder="your name">
 
-            </div>
-            <div class="form-group ">
-                <!--<label for="uemail">Your email</label>-->
-                <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
-                <input type="text" name="uemail" id="uemail" placeholder="Email adress">
-            </div>
-            <div class="form-group ">
-                <!--<label for="umessage">Your message</label>-->
-                <div class="input-group-addon last"><i class="fa fa-pencil"></i></div>
-                <textarea name="umessage" id="umessage" placeholder="your message"></textarea>
-            </div>
-            <button type="submit" class="btn btn-info">Submit</button>
-        </form>
-    </div><!--page_contact-->
-
-    <div class="details container-fluid">
-        <div class="container">
-            <h1>Contact me</h1>
-
-            <div class="adress col-md-4 col-sm-12 col-xs-12">
-                <i class="circled-icon icon-color2 fa fa-map-marker"></i>
-
-                <h3>Adress</h3>
-
-                <p>London</p>
-            </div>
-            <div class="phone col-md-4 col-sm-12 col-xs-12">
-                <i class="circled-icon icon-color2 fa fa-phone"></i>
-
-                <h3>My Phone</h3>
-
-                <p>+(44) 79xx xxxxxx</p>
-            </div>
-            <div class="social col-md-4 col-sm-12 col-xs-12 ">
-                <a href="#"><i class="fa fa-envelope-o"></i></a>
-                <a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-            </div>
+                </div>
+                <div class="form-group ">
+                    <!--<label for="uemail">Your email</label>-->
+                    <div class="input-group-addon"><i class="fa fa-envelope"></i></div>
+                    <input type="text" name="uemail" id="uemail" placeholder="Email adress">
+                </div>
+                <div class="form-group ">
+                    <!--<label for="umessage">Your message</label>-->
+                    <div class="input-group-addon last"><i class="fa fa-pencil"></i></div>
+                    <textarea name="umessage" id="umessage" placeholder="your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-info">Submit</button>
+            </form>
         </div>
-    </div>
-    <!--details-->
+        <div class="getintouchinfo col-md-6 col-sm-6 col-xs-12">
+            <h3>Contact Information</h3>
+            <div class="contact_left">
+                <h4>LONDON UK</h4>
+                <h4>E-mail:</h4>
+            </div>
+            <div class="contact_right">
+                <p>Tel: (+44) 216-4404-000</p>
+                <p>info@imaginarium_box.com</p>
+            </div>
+
+            <h3>Find us on the map!</h3>
+        </div>
+
+    </div><!--page_contact-->
+</div><!--container-->
     <!--footer-->
     <div class="container-fluid">
         <div id="footer">
@@ -105,7 +95,5 @@
         </div>
     </div>
     <!--end footer-->
-
-</div><!--container-->
 </body>
 </html>
