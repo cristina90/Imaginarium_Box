@@ -12,16 +12,53 @@ a:active {
     background-color: #e8d27e;
 }
 
+#header{
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+#menu.fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    margin-bottom: 18px;
+    -webkit-box-shadow: 0px 2px 9px 0px rgba(50, 50, 50, 0.45);
+    -moz-box-shadow: 0px 2px 9px 0px rgba(50, 50, 50, 0.45);
+    box-shadow: 0px 2px 9px 0px rgba(50, 50, 50, 0.45);
+
+}
 .logo img {
     width: 13%;
     margin: 40px 0 10px 0;
 }
 
 #menu {
-    display: inline-block;
+    /*display: inline-block;*/
     text-align: center;
-    margin: 30px auto 20px auto;
-    padding: 0;
+    padding: 30px 0 0 0;
+    background: #f1f2f4;
+}
+
+#menu nav{
+    background: #f1f2f4;
+    border: none;
+    /*display: flex;*/
+}
+.navbar ul{
+    float: right;
+}
+.navbar-toggle{
+    background: #f1f2f4;
+    border: none;
+}
+.navbar-default  .navbar-toggle:hover {
+    background-color: #f1f2f4;
 }
 
 #menu a{
@@ -31,6 +68,7 @@ a:active {
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: .2em;
+    text-align: right;
 }
 
 .menu a:active {
@@ -42,7 +80,21 @@ a:active {
     color: #e8d27e;
     /*border-bottom: 1px solid #e8d27e;*/
 }
+/*.mobile-menu {*/
+    /*background-color: #fff;*/
+    /*position: fixed;*/
+    /*left: 0;*/
+    /*top: 0;*/
+    /*width: 100%;*/
+    /*height: 100vh;*/
+    /*padding: 15px 0;*/
+    /*z-index: 10;*/
+    /*-webkit-transform: translateX(-100%);*/
+    /*-ms-transform: translateX(-100%);*/
+    /*transform: translateX(-100%);*/
+/*}*/
 
+/*page home*/
 .split_page img{
     width: 100%;
 }
@@ -50,6 +102,7 @@ a:active {
 .mywork{
     position: relative;
     display: flex;
+    margin: 0 0 20px 0;
 }
 .getintouch{
     position: relative;
@@ -81,7 +134,7 @@ a:active {
 }
 .about img{
     border-radius: 500px;
-    width: 300px;
+    width: 215px;
 }
 
 #footer {
@@ -122,7 +175,7 @@ a:active {
     color: white;
 }
 
-
+/*page contact*/
 .form-group{
     text-align: left;
 }
@@ -218,14 +271,15 @@ a:active {
    text-align: right;
 }
 
+/*page porfolio*/
 .picture{
     position: relative;
     display: block;
     float: left;
     background-size: cover;
     overflow: hidden;
+    width: calc(99% - 1px);
 }
-
 .picture img{
     -webkit-transition: all 1s ease; /* Safari and Chrome */
     -moz-transition: all 1s ease; /* Firefox */
@@ -234,7 +288,6 @@ a:active {
     -webkit-transition: -webkit-transform .3s ease-in-out;
     transition: transform .3s ease-in-out;
 }
-
 .picture:hover img {
     -webkit-transform:scale(1.10); /* Safari and Chrome */
     -moz-transform:scale(1.10); /* Firefox */
@@ -246,24 +299,24 @@ a:active {
     overflow: hidden;
 
 }
-.details{
-    /*position: absolute;*/
+.picture::before {
+    content: " ";
+    background: linear-gradient(to bottom,rgba(101,10,10,0) 0,rgba(255,13,87,0.10) 100%);
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom,rgba(101,10,10,0) 0,rgba(255,13,87,0.10) 100%)
+    position: absolute;
+    z-index: 2;
 }
 .project_name{
     bottom: 0;
-    color: #e8d27e;
+    color: #ffffff;
+    z-index: 3;
     position: absolute;
     text-align: -webkit-left;
     margin: 0 10px;
 }
 .picture img{
     width: 377px;
-    /*height: 422px;*/
-    /*padding: 3px;*/
-
 }
 .photo img{
     width: 300px;
@@ -271,12 +324,11 @@ a:active {
     padding: 9px;
 
 }
-
 .item{
-    margin: 3px 0 0;
+    margin: 5px 0 0;
     padding: 0;
 }
-
+/*page haute_couture*/
 .catalog_picture img{
     width: 283px;
 }
@@ -284,4 +336,11 @@ a:active {
     padding: 0;
     position: relative;
     margin: 0 0 2px 0;
+}
+/*page about*/
+.about{
+    margin: 50px;
+}
+.about h1 {
+    margin: 50px 0 30px 0;
 }

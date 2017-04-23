@@ -25,55 +25,70 @@
                 <img src="images/logo.png">
                 <p>LyccAnna</p>
             </div>
-            <nav>
                 <div id="menu">
-                    <ul class="nav navbar-nav">
-                        <li><a href="home.html" class="active">Home</a></li>
-                        <li role="presentation"><a href="about.html" class="active">About</a></li>
-                        <li role="presentation"><a href="portfolio.html" class="active">Wedding Dresses</a></li>
-                        <li role="presentation"><a href="haute_couture.html" class="active">Haute Couture</a></li>
-                        <li role="presentation"><a href="contact.html" class="active">Contact</a></li>
-                        <li role="presentation"><a href="blog.html" class="active">Blog</a></li>
-                    </ul>
+                    <div class="mobile-menu">
+                        <nav class="navbar navbar-default">
+                            <div class="container">
+                                <div class="navbar-header" id="toggle">
+                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <!--<a class="navbar-brand" href="#">WebSiteName</a>-->
+                                </div>
+                                <div class="collapse navbar-collapse" id="myNavbar">
+                                    <ul class="nav navbar-nav">
+                                        <li><a href="home.html" class="active">Home</a></li>
+                                        <li role="presentation"><a href="about.html" class="active">About</a></li>
+                                        <li role="presentation"><a href="portfolio.html" class="active">Wedding Dresses</a></li>
+                                        <li role="presentation"><a href="haute_couture.html" class="active">Haute Couture</a></li>
+                                        <li role="presentation"><a href="contact.html" class="active">Contact</a></li>
+                                        <li role="presentation"><a href="blog.html" class="active">Blog</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
-
-            </nav>
 
         </div>
         <!--end head-->
-
-
-
-        <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="split_page">
-                <div class="mywork col-md-6 col-sm-6 col-xs-6">
-                    <img src="images/img1.jpg">
-                    <div class="more">
-                        <a href="portfolio.html">
+<div id="content">
+    <div class="col-md-12 col-sm-12 col-xs-12">
+        <div class="split_page">
+            <div class="mywork col-md-6 col-sm-6 col-xs-12">
+                <img src="images/img1.jpg">
+                <div class="more">
+                    <a href="portfolio.html">
                         <p>See Collections</p>
-                        </a>
-                    </div>
+                    </a>
                 </div>
+            </div>
 
-                <div class="getintouch col-md-6 col-sm-6 col-xs-6">
-                    <img src="images/img1.jpg">
-                    <div class="more">
-                        <a href="contact.html">
-                            <p>Get in Touch</p>
-                        </a>
-                    </div>
+            <div class="getintouch col-md-6 col-sm-6 col-xs-12">
+                <img src="images/img1.jpg">
+                <div class="more">
+                    <a href="contact.html">
+                        <p>Get in Touch</p>
+                    </a>
                 </div>
-            </div><!--ends slideshow-container-->
-
-
-            <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
             </div>
         </div>
 
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </div>
+
 </div>
+</div> <!--end content-->
+
+
+
 <!--footer-->
 <div class="container-fluid">
     <div id="footer">
@@ -83,7 +98,7 @@
             <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
             <a href="#"><i class="fa fa-twitter"></i></a>
         </div>
-        <div class="col-md-6 col-sm-6 col-xs-8 text-left">
+        <div class="col-md-6 col-sm-6 col-xs-12 text-left">
             <h6>Copyright © 2017 Imaginarium Box.</h6>
         </div>
     </div>
