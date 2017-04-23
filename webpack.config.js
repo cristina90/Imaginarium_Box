@@ -33,8 +33,10 @@ const config = {
   // The entry point for the bundle
   entry: [
     /* Material Design Lite (https://getmdl.io) */
-    '!!style!css!react-mdl/extra/material.min.css',
-    'react-mdl/extra/material.min.js',
+    // '!!style!css!react-mdl/extra/material.min.css',
+    // 'react-mdl/extra/material.min.js',
+    // 'bootstrap-loader',
+    // './node_modules/bootstrap/dist/css/bootstrap.css',
     /* The main entry point of your JavaScript application */
     './main.js',
   ],
@@ -74,6 +76,10 @@ const config = {
     new webpack.DefinePlugin({
       'process.env.NODE_ENV': isDebug ? '"development"' : '"production"',
       __DEV__: isDebug,
+    }),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery"
     }),
     // Emit a JSON file with assets paths
     // https://github.com/sporto/assets-webpack-plugin#options

@@ -20,6 +20,7 @@ import store from './core/store';
 import router from './core/router';
 import history from './core/history';
 
+
 let routes = require('./routes.json'); // Loaded with utils/routes-loader.js
 const container = document.getElementById('container');
 

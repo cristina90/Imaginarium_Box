@@ -8,23 +8,7 @@
 * LICENSE.txt file in the root directory of this source tree.
 */
 
-.row {
-  padding: 40px;
-}
-
-.title {
-  color: #fff;
-  text-decoration: none;
-}
-
-@media screen and (max-width: 1024px) {
-
-  .header {
-    display: flex;
-  }
-
-  .row {
-    padding: 0 16px;
-  }
-
+.logo img {
+  width: 13%;
+  margin: 40px 0 10px 0;
 }
