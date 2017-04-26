@@ -13,19 +13,19 @@ import Link from '../Link';
 import s from './Navigation.css';
 
 class Navigation extends React.Component {
-  //
-  // componentDidMount() {
-  //   window.componentHandler.upgradeElement(this.root);
-  // }
-  //
-  // componentWillUnmount() {
-  //   window.componentHandler.downgradeElements(this.root);
-  // }
+   //
+   //componentDidMount() {
+   //  window.componentHandler.upgradeElement(this.root);
+   //}
+   //
+   //componentWillUnmount() {
+   //  window.componentHandler.downgradeElements(this.root);
+   //}
 
   render() {
     return (
       <div className={s.menu}>
-        <div className="mobile-menu">
+        <div className={s.mobile-menu}>
           <nav className="navbar navbar-default">
             <div className="container">
               <div className="navbar-header" id="toggle">

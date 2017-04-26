@@ -27,7 +27,7 @@ class HomePage extends React.Component {
   render() {
     return (
       <Layout className="container col-md-12 col-sm-12 col-xs-12">
-        <div className="split_page">
+        <div className={s.split_page}>
           <div className="mywork col-md-6 col-sm-6 col-xs-12">
             <img src="images/img1.jpg" />
             <div className="more">
