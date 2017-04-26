@@ -14,15 +14,19 @@
   },
   {
     "path": "/about",
-    "page": "./pages/portfolio"
+    "page": "./pages/about"
   },
   {
-    "path": "/portfolio",
+    "path": "/haute_couture",
+    "page": "./pages/haute_couture"
+  },
+  {
+    "path": "/about",
     "page": "./pages/about"
   },
   {
     "path": "/contact",
-    "page": "./pages/about"
+    "page": "./pages/contact"
   },
   {
     "path": "/tasks/:status(pending|completed)?",
