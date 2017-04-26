@@ -14,6 +14,14 @@
   },
   {
     "path": "/about",
+    "page": "./pages/portfolio"
+  },
+  {
+    "path": "/portfolio",
+    "page": "./pages/about"
+  },
+  {
+    "path": "/contact",
     "page": "./pages/about"
   },
   {

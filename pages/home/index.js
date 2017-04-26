@@ -27,9 +27,25 @@ class HomePage extends React.Component {
   render() {
     return (
       <Layout className="container col-md-12 col-sm-12 col-xs-12">
-        {main_images.map((image) => {
-          return <img src={image.src} />;
-        })}
+        <div className="split_page">
+          <div className="mywork col-md-6 col-sm-6 col-xs-12">
+            <img src="images/img1.jpg" />
+            <div className="more">
+              <a href="portfolio.html">
+                <p>See Collections</p>
+              </a>
+            </div>
+          </div>
+
+          <div className="getintouch col-md-6 col-sm-6 col-xs-12">
+            <img src="images/img1.jpg" />
+            <div className="more">
+              <a href="contact.html">
+                <p>Get in Touch</p>
+              </a>
+            </div>
+          </div>
+        </div>
       </Layout>
     );
   }

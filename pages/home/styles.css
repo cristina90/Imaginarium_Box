@@ -8,11 +8,41 @@
  * LICENSE.txt file in the root directory of this source tree.
  */
 
-@media screen and (max-width: 1024px) {
+.split_page img{
+  width: 100%;
+}
 
-  .content {
-    padding: 0 16px;
-  }
-
+.mywork{
+  position: relative;
+  display: flex;
+  margin: 0 0 20px 0;
+}
+.getintouch{
+  position: relative;
+  display: flex;
+}
+.more{
+  position: absolute;
+  bottom: 0;
+  width: 180px;
+  height: 45px;
+  margin: 0 0 40px;
+  background: rgba(232, 210, 126, 0.25);
+  border: 1px solid rgba(232, 210, 126, 0.42)
+}
+.more a{
+  color: #808080;
+}
+.more a:hover{
+  text-decoration: none;
+}
+.more p{
+  padding: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+.more:hover{
+  background: rgba(232, 210, 126, 0.69);
 }
 

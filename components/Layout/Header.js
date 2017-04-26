@@ -29,7 +29,6 @@ class Header extends React.Component {
         <div className={`${s.logo}`}>
           <Link to="/">
             <img src="images/logo.png"></img>
-            <p>LyccAnna</p>
           </Link>
           <Navigation />
         </div>

@@ -24,25 +24,32 @@ class Navigation extends React.Component {
 
   render() {
     return (
-      <nav id={`${s.menu}`}>
-        <ul className="nav navbar-nav">
-          <li>
-            <Link className="active" to="/">Home</Link>
-          </li>
-          <li>
-            <Link to="/about">About</Link>
-          </li>
-          <li>
-            <Link to="/portfolio">Portfolio</Link>
-          </li>
-          <li>
-            <Link to="/contact">Contact</Link>
-          </li>
-          <li>
-            <Link to="/blog">Blog</Link>
-          </li>
-        </ul>
-      </nav>
+      <div className={s.menu}>
+        <div className="mobile-menu">
+          <nav className="navbar navbar-default">
+            <div className="container">
+              <div className="navbar-header" id="toggle">
+                <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span className="icon-bar"></span>
+                  <span className="icon-bar"></span>
+                  <span className="icon-bar"></span>
+                </button>
+
+              </div>
+              <div className="collapse navbar-collapse" id="myNavbar">
+                <ul className="nav navbar-nav">
+                  <li><a href="/" className="active">Home</a></li>
+                  <li role="presentation"><a href="/about" className="active">About</a></li>
+                  <li role="presentation"><a href="/portfolio" className="active">Wedding Dresses</a></li>
+                  <li role="presentation"><a href="/haute_couture" className="active">Haute Couture</a></li>
+                  <li role="presentation"><a href="/contact" className="active">Contact</a></li>
+                  <li role="presentation"><a href="/blog" className="active">Blog</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+       </div>
     );
   }
 
