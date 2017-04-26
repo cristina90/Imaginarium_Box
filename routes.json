@@ -17,12 +17,12 @@
     "page": "./pages/about"
   },
   {
-    "path": "/haute_couture",
-    "page": "./pages/haute_couture"
+    "path": "/portfolio",
+    "page": "./pages/portfolio"
   },
   {
-    "path": "/about",
-    "page": "./pages/about"
+    "path": "/haute_couture",
+    "page": "./pages/haute_couture"
   },
   {
     "path": "/contact",

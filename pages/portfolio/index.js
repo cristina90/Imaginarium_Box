@@ -13,7 +13,7 @@ import Layout from '../../components/Layout';
 import s from './styles.css';
 import { title, html } from './index.md';
 
-class HomePage extends React.Component {
+class PortfolioPage extends React.Component {
 
   static propTypes = {
     articles: PropTypes.array.isRequired,
@@ -122,4 +122,4 @@ class HomePage extends React.Component {
 
 }
 
-export default HomePage;
+export default PortfolioPage;
