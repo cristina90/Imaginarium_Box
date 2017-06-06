@@ -26,45 +26,45 @@ class Haute_couturePage extends React.Component {
   render() {
     return (
       <Layout className="container col-md-12 col-sm-12 col-xs-12">
-        <div className="item col-md-4 col-sm-6 col-xs-12">
-          <a href="haute_couture_open.html">
-            <div className="picture">
+        <div className={"col-md-4 col-sm-6 col-xs-12 " + s["item"]}>
+          <a href="haute_couture_open/">
+            <div className={s.picture}>
               <img src="images/img2.jpg" />
               </div>
-              <div className="project_name">
+              <div className={s.project_name}>
                 <h3>Description of the project</h3>
                 <h6>Project Name</h6>
               </div>
             </a>
           </div>
-          <div className="item col-md-4 col-sm-6 col-xs-12">
-            <a href="haute_couture_open.html">
-              <div className="picture">
-                <img src="images/img2.jpg" />
+          <div className={"col-md-4 col-sm-6 col-xs-12 " + s["item"]}>
+            <a href="haute_couture_open/">
+              <div className={s.picture}>
+                <img src="/images/img2.jpg" />
                 </div>
-                <div className="project_name">
+                <div className={s.project_name}>
                   <h3>Description of the project</h3>
                   <h6>Project Name</h6>
                 </div>
               </a>
             </div>
-            <div className="item col-md-4 col-sm-6 col-xs-12">
-              <a href="haute_couture_open.html">
-                <div className="picture">
-                  <img src="images/img2.jpg" />
+            <div className={"col-md-4 col-sm-6 col-xs-12 " + s["item"]}>
+              <a href="haute_couture_open/">
+                <div className={s.picture}>
+                  <img src="/images/img2.jpg" />
                   </div>
-                  <div className="project_name">
+                  <div className={s.project_name}>
                     <h3>Description of the project</h3>
                     <h6>Project Name</h6>
                   </div>
                 </a>
               </div>
-              <div className="item col-md-4 col-sm-6 col-xs-12">
-                <a href="haute_couture_open.html">
-                  <div className="picture">
-                    <img src="images/img2.jpg" />
+              <div className={"col-md-4 col-sm-6 col-xs-12 " + s["item"]}>
+                <a href="haute_couture_open/">
+                  <div className={s.picture}>
+                    <img src="/images/img2.jpg" />
                     </div>
-                    <div className="project_name">
+                    <div className={s.project_name}>
                       <h3>Description of the project</h3>
                       <h6>Project Name</h6>
                     </div>

@@ -26,90 +26,90 @@ class PortfolioPage extends React.Component {
   render() {
     return (
       <Layout className="container col-md-12 col-sm-12 col-xs-12">
-       <div className="work">
-          <div className="item col-md-4 col-sm-6 col-xs-12">
-            <a href="portfolio_open.html">
-              <div className="picture">
+       <div className={s.work}>
+          <div className={"col-md-4 col-sm-6 col-xs-12 " + s["item"]}>
+            <a href="portfolio_open/">
+              <div className={s.picture}>
                 <img src="images/img2.jpg" />
               </div>
-                <div className="project_name">
+                <div className={s.project_name}>
                   <h3>Description of the project</h3>
                   <h6>Project Name</h6>
                 </div>
             </a>
           </div>
-          <div className="item col-md-4 col-sm-6 col-xs-12">
-              <a href="portfolio_open.html">
-                <div className="picture">
+          <div className={"col-md-4 col-sm-6 col-xs-12 " + s["item"]}>
+              <a href="portfolio_open/">
+                <div className={s.picture}>
                   <img src="images/img2.jpg" />
                 </div>
-                  <div className="project_name">
-                    <h3>Description of the project</h3>
-                    <h6>Project Name</h6>
-                  </div>
+                    <div className={s.project_name}>
+                      <h3>Description of the project</h3>
+                      <h6>Project Name</h6>
+                    </div>
               </a>
           </div>
-              <div className="item col-md-4 col-sm-6 col-xs-12">
-                <a href="portfolio_open.html">
-                  <div className="picture">
+          <div className={"col-md-4 col-sm-6 col-xs-12 " + s["item"]}>
+                <a href="portfolio_open/">
+                  <div className={s.picture}>
                     <img src="images/img2.jpg" />
                     </div>
-                    <div className="project_name">
+                    <div className={s.project_name}>
                       <h3>Description of the project</h3>
                       <h6>Project Name</h6>
                     </div>
                   </a>
                 </div>
-                <div className="item col-md-4 col-sm-6 col-xs-12">
-                  <a href="portfolio_open.html">
-                    <div className="picture">
+                <div className={"col-md-4 col-sm-6 col-xs-12 " + s["item"]}>
+                  <a href="portfolio_open/">
+                    <div className={s.picture}>
                       <img src="images/img2.jpg" />
                       </div>
-                      <div className="project_name">
+                      <div className={s.project_name}>
                         <h3>Description of the project</h3>
                         <h6>Project Name</h6>
                       </div>
                     </a>
                   </div>
-                  <div className="item col-md-4 col-sm-6 col-xs-12">
-                    <a href="portfolio_open.html">
-                      <div className="picture">
+                  <div className={"col-md-4 col-sm-6 col-xs-12 " + s["item"]}>
+                    <a href="portfolio_open/">
+                      <div className={s.picture}>
                         <img src="images/img2.jpg" />
                         </div>
-                        <div className="project_name">
+                        <div className={s.project_name}>
                           <h3>Description of the project</h3>
                           <h6>Project Name</h6>
                         </div>
                       </a>
                     </div>
-                    <div className="item col-md-4 col-sm-6 col-xs-12">
-                      <a href="portfolio_open.html">
-                        <div className="picture">
+                    <div className={"col-md-4 col-sm-6 col-xs-12 " + s["item"]}>
+                      <a href="portfolio_open/">
+                        <div className={s.picture}>
                           <img src="images/img2.jpg" />
                           </div>
-                          <div className="project_name">
+                          <div className={s.project_name}>
                             <h3>Description of the project</h3>
                             <h6>Project Name</h6>
                           </div>
                         </a>
                       </div>
-                      <div className="item col-md-4 col-sm-6 col-xs-12">
-                        <a href="portfolio_open.html">
-                          <div className="picture">
+                      <div className={"col-md-4 col-sm-6 col-xs-12 " + s["item"]}>
+                        <a href="portfolio_open/">
+                          <div className={s.picture}>
                             <img src="images/img2.jpg" />
                             </div>
-                            <div className="project_name">
+                            <div className={s.project_name}>
                               <h3>Description of the project</h3>
                               <h6>Project Name</h6>
                             </div>
                           </a>
                         </div>
-                        <div className="item col-md-4 col-sm-6 col-xs-12">
-                          <a href="portfolio_open.html">
-                            <div className="picture">
+                        <div className={"col-md-4 col-sm-6 col-xs-12 " + s["item"]}>
+                          <a href="portfolio_open/">
+                            <div className={s.picture}>
                               <img src="images/img2.jpg" />
                               </div>
-                              <div className="project_name">
+                              <div className={s.project_name}>
                                 <h3>Description of the project</h3>
                                 <h6>Project Name</h6>
                               </div>

@@ -36,7 +36,13 @@
   background-color: #f1f2f4;
 }
 
-.menu a{
+.myNavbar{
+  float: none;
+  display: inline-block;
+  margin: auto;
+}
+
+.menu ul li a{
   padding: 0 11px 0;
   color: #808080;
   font-size: 1.25rem;
@@ -46,12 +52,13 @@
   text-align: right;
 }
 
-.menu a:active {
+.menu ul li a:active {
   color: #e8d27e;
 }
 
-.menu a:hover{
-  background-color: #f1f2f4;
-  color: #e8d27e;
+.menu ul li a:hover{
+  background-color: #f1f2f4 !important;
+  color: #e8d27e !important;
   /*border-bottom: 1px solid #e8d27e;*/
+  cursor: pointer;
 }

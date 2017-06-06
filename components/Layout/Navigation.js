@@ -25,7 +25,7 @@ class Navigation extends React.Component {
   render() {
     return (
       <div className={s.menu}>
-        <div className={s.mobile-menu}>
+        <div className="mobile-menu">
           <nav className="navbar navbar-default">
             <div className="container">
               <div className="navbar-header" id="toggle">
@@ -34,10 +34,9 @@ class Navigation extends React.Component {
                   <span className="icon-bar"></span>
                   <span className="icon-bar"></span>
                 </button>
-
               </div>
-              <div className="collapse navbar-collapse" id="myNavbar">
-                <ul className="nav navbar-nav">
+              <div className="collapse navbar-collapse">
+                <ul className={"nav navbar-nav " + s["myNavbar"]}>
                   <li><a href="/" className="active">Home</a></li>
                   <li role="presentation"><a href="/about" className="active">About</a></li>
                   <li role="presentation"><a href="/portfolio" className="active">Wedding Dresses</a></li>

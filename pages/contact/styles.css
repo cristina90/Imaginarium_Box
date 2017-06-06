@@ -12,13 +12,13 @@
   text-align: left;
 }
 
-.form-group label {
+.contactinfo label {
   display: block;
   font-weight: 400;
   font-size: 14px
 }
 
-.form-group input {
+.contactinfo input {
   width: 420px;
   max-width: 100%;
   display: inline-block;
@@ -28,13 +28,11 @@
   padding: 0 4px 0 55px;
   outline: none;
   height: 40px;
-  /*box-shadow: 1px 1px 1px #ccc;*/
   font-size: 13px;
   margin-bottom: 13px;
-  /*border-radius: 5px;*/
 }
 
-.form-group textarea {
+.contactinfo textarea {
   width: 420px;
   max-width: 100%;
   display: inline-block;
@@ -49,8 +47,8 @@
   /*border-radius: 5px;*/
 }
 
-.btn {
-  background-color: rgba(232, 210, 126, 0.63);
+.contactinfo button {
+  background-color: rgba(232, 210, 126, 0.83);
   width: 127px;
   height: 50px;
   font-size: 20px;
@@ -62,13 +60,16 @@
   border-radius: 0;
 }
 
-.btn:hover {
+.contactinfo button:hover {
   /*border: 1px solid #999;*/
   /*box-shadow: 1px 2px 1px #ccc;*/
-  background: rgba(232, 210, 126, 0.83);
+  background: rgba(232, 210, 126, 0.63);
 }
 
-.form-group .input-group-addon {
+.contactinfo form {
+  float: left;
+}
+.form-form .add-form {
   display: inline;
   position: absolute;
   z-index: 999;
@@ -80,22 +81,34 @@
   border-radius: 0;
 }
 
-.input-group-addon.last {
+.add-form-last {
   height: 120px;
+  display: inline;
+  position: absolute;
+  z-index: 999;
+  width: 50px;
+  border-right: 1px;
+  border: 1px solid #999;
+  color: black;
+  padding: 11px;
+  border-radius: 0;
 }
 .page_contact h3{
   color: #222;
-  padding: 30px 0;
+  margin: 0 0 30px;
   text-align: left;
   font-family:  'Open Sans','Roboto', Futura, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
+
 .contact_left{
   width: 50%;
   float: left;
   text-align: left;
   color: #222222;
 }
-
+.contact_left h3{
+  margin: 0;
+}
 .contact_right p{
   padding: 5px 0 0 0;
 }

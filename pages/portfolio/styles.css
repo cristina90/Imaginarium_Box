@@ -7,14 +7,16 @@
  * This source code is licensed under the MIT license found in the
  * LICENSE.txt file in the root directory of this source tree.
  */
-
-.picture{
+.work {
+  padding: 0 15px;
+}
+.picture {
   position: relative;
   display: block;
   float: left;
   background-size: cover;
   overflow: hidden;
-  width: calc(99% - 1px);
+  width: calc(100% - 5px);
 }
 .picture img{
   -webkit-transition: all 1s ease; /* Safari and Chrome */
@@ -23,6 +25,7 @@
   -o-transition: all 1s ease; /* Opera */
   -webkit-transition: -webkit-transform .3s ease-in-out;
   transition: transform .3s ease-in-out;
+  width: 100%;
 }
 .picture:hover img {
   -webkit-transform:scale(1.10); /* Safari and Chrome */
@@ -43,7 +46,7 @@
   position: absolute;
   z-index: 2;
 }
-.project_name{
+.project_name {
   bottom: 0;
   color: #ffffff;
   z-index: 3;
@@ -52,7 +55,7 @@
   margin: 0 10px;
 }
 .picture img{
-  width: 377px;
+  /*width: 377px;*/
 }
 .photo img{
   width: 300px;
@@ -60,7 +63,7 @@
   padding: 9px;
 
 }
-.item{
+.item {
   margin: 5px 0 0;
   padding: 0;
 }
