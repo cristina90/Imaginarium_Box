@@ -1,0 +1,117 @@
+/**
+ * React Static Boilerplate
+ * https://github.com/koistya/react-static-boilerplate
+ *
+ * Copyright © 2015-2016 Konstantin Tarkus (@koistya)
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE.txt file in the root directory of this source tree.
+ */
+
+.form-group{
+  text-align: left;
+}
+
+.contactinfo label {
+  display: block;
+  font-weight: 400;
+  font-size: 14px
+}
+
+.contactinfo input {
+  width: 420px;
+  max-width: 100%;
+  display: inline-block;
+  position: relative;
+  background: #fff;
+  border: 1px solid #999;
+  padding: 0 4px 0 55px;
+  outline: none;
+  height: 40px;
+  font-size: 13px;
+  margin-bottom: 13px;
+}
+
+.contactinfo textarea {
+  width: 420px;
+  max-width: 100%;
+  display: inline-block;
+  position: relative;
+  background: #fff;
+  border: 1px solid #999;
+  padding: 6px 4px 0 55px;
+  outline: none;
+  height: 120px;
+  font-size: 13px;
+  /*box-shadow: 1px 1px 1px #ccc;*/
+  /*border-radius: 5px;*/
+}
+
+.contactinfo button {
+  background-color: rgba(232, 210, 126, 0.83);
+  width: 127px;
+  height: 50px;
+  font-size: 20px;
+  border: 0;
+  /*box-shadow: 1px 1px 1px 1px #ccc;*/
+  margin-bottom: 40px;
+  float: left;
+  clear: both;
+  border-radius: 0;
+}
+
+.contactinfo button:hover {
+  /*border: 1px solid #999;*/
+  /*box-shadow: 1px 2px 1px #ccc;*/
+  background: rgba(232, 210, 126, 0.63);
+}
+
+.contactinfo form {
+  float: left;
+}
+.form-form .add-form {
+  display: inline;
+  position: absolute;
+  z-index: 999;
+  height: 40px;
+  width: 50px;
+  border: 1px solid #999;
+  color: black;
+  padding: 11px;
+  border-radius: 0;
+}
+
+.add-form-last {
+  height: 120px;
+  display: inline;
+  position: absolute;
+  z-index: 999;
+  width: 50px;
+  border-right: 1px;
+  border: 1px solid #999;
+  color: black;
+  padding: 11px;
+  border-radius: 0;
+}
+.page_contact h3{
+  color: #222;
+  margin: 0 0 30px;
+  text-align: left;
+  font-family:  'Open Sans','Roboto', Futura, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.contact_left{
+  width: 50%;
+  float: left;
+  text-align: left;
+  color: #222222;
+}
+.contact_left h3{
+  margin: 0;
+}
+.contact_right p{
+  padding: 5px 0 0 0;
+}
+.contact_right{
+  text-align: right;
+}

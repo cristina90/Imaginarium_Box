@@ -17,6 +17,26 @@
     "page": "./pages/about"
   },
   {
+    "path": "/portfolio",
+    "page": "./pages/portfolio"
+  },
+  {
+    "path": "/haute_couture",
+    "page": "./pages/haute_couture"
+  },
+  {
+    "path": "/contact",
+    "page": "./pages/contact"
+  },
+  {
+    "path": "/portfolio_open",
+    "page": "./pages/portfolio_open"
+  },
+  {
+    "path": "/haute_couture_open",
+    "page": "./pages/haute_couture_open"
+  },
+  {
     "path": "/tasks/:status(pending|completed)?",
     "page": "./pages/home"
   }

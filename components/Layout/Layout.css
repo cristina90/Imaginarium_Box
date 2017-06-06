@@ -11,10 +11,19 @@
 
 body {
   text-align: center;
+  font-family: 'Roboto', 'Open Sans', Futura, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color: #494949;
+  background-color: #f1f2f4;
+}
+h4{
+  font-family: 'Roboto', 'Open Sans', Futura, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+a:active {
+  background-color: #e8d27e;
 }
 
 .content {
   margin: 0 auto;
-  max-width: 1000px;
   width: 100%;
 }

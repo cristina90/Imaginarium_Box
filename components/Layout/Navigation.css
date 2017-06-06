@@ -1,19 +1,64 @@
-#menu {
-  display: inline-block;
+.menu.fixed {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 18px;
+  -webkit-box-shadow: 0px 2px 9px 0px rgba(50, 50, 50, 0.45);
+  -moz-box-shadow: 0px 2px 9px 0px rgba(50, 50, 50, 0.45);
+  box-shadow: 0px 2px 9px 0px rgba(50, 50, 50, 0.45);
+
+}
+
+.menu {
   text-align: center;
-  margin: 30px auto 20px auto;
-  border-bottom: 1px solid #000;
-  border-top: 1px solid #000;
-  max-width: 320px;
-  padding: 0;
+  padding: 30px 0 0 0;
+  background: #f1f2f4;
 }
 
-#menu a{
+.menu nav{
+  background: #f1f2f4;
+  border: none;
+  /*display: flex;*/
+}
+.navbar ul{
+  float: right;
+}
+.navbar-toggle{
+  background: #f1f2f4;
+  border: none;
+}
+.navbar-default  .navbar-toggle:hover {
+  background-color: #f1f2f4;
+}
+
+.myNavbar{
+  float: none;
+  display: inline-block;
+  margin: auto;
+}
+
+.menu ul li a{
   padding: 0 11px 0;
-  color: #000;
+  color: #808080;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .2em;
+  text-align: right;
 }
 
-#menu a:hover{
-  background-color: #ffffff;
+.menu ul li a:active {
   color: #e8d27e;
+}
+
+.menu ul li a:hover{
+  background-color: #f1f2f4 !important;
+  color: #e8d27e !important;
+  /*border-bottom: 1px solid #e8d27e;*/
+  cursor: pointer;
 }

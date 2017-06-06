@@ -15,16 +15,16 @@ import s from './Footer.css';
 
 function Footer() {
   return (
-    <div id="footer">
-      <div className="container">
-        <div className="footer_social">
+    <div className={s.footer}>
+      <div className="container-fluid">
+        <div className={s.footer_social}>
           <a href="#"><i className="fa fa-envelope-o"></i></a>
           <a href="#"><i className="fa fa-pinterest-p" aria-hidden="true"></i></a>
           <a href="#"><i className="fa fa-facebook-square" aria-hidden="true"></i></a>
           <a href="#"><i className="fa fa-twitter"></i></a>
         </div>
         <div className="col-md-6 col-sm-6 col-xs-8 text-left">
-          <h6>Copyright © 2017 Imaginarium Box.</h6>
+          <div className={s.footer_right_copyright}>© 2017 ImaginariumBox ® London </div>
         </div>
       </div>
     </div>

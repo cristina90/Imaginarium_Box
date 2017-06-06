@@ -1,10 +1,12 @@
+
 .footer {
-  background-color: black;
+  clear: both;
+  padding: 30px 0 5px 0;
 }
 .footer_social {
-  border-bottom: 1px dashed #e8d27e;
-  padding-bottom: 20px;
-  margin-top: 30px;
+
+  /*border-bottom: 1px dashed #e8d27e;*/
+
 }
 .footer_social a {
   margin: 7px;
@@ -20,53 +22,16 @@
   display: inline-block;
   vertical-align: middle;
   overflow: hidden;
+  color: #e8d27e;
 }
-.footer_social i {
-  color: white;
-}
+
 .footer_social a:hover {
   background: #e8d27e;
   border: 2px solid #e8d27e;
   -webkit-box-shadow: 0 0 0 0 #e8d27e;
   box-shadow: 0 0 0 0 #e8d27e;
+  color: white;
 }
-
-
-
-
-.form-group label {
-  display: block;
-  font-weight: 400;
-  font-size: 14px
-}
-
-.form-group input {
-  width: 420px;
-  max-width: 100%;
-  display: inline-block;
-  position: relative;
-  background: #fff;
-  border: 1px solid #999;
-  padding: 0 4px 0 55px;
-  outline: none;
-  height: 30px;
-  box-shadow: 1px 1px 1px #ccc;
-  font-size: 13px;
-  margin-bottom: 13px;
-  /*border-radius: 5px;*/
-}
-
-.form-group textarea {
-  width: 420px;
-  max-width: 100%;
-  display: inline-block;
-  position: relative;
-  background: #fff;
-  border: 1px solid #999;
-  padding: 6px 4px 0 55px;
-  outline: none;
-  height: 120px;
-  font-size: 13px;
-  box-shadow: 1px 1px 1px #ccc;
-  /*border-radius: 5px;*/
+.footer_right_copyright {
+  font-size: 10px;
 }
