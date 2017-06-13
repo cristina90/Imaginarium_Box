@@ -35,7 +35,7 @@ class Navigation extends React.Component {
                   <span className="icon-bar"></span>
                 </button>
               </div>
-              <div className="collapse navbar-collapse">
+              <div>
                 <ul className={"nav navbar-nav " + s["myNavbar"]}>
                   <li><a href="/" className="active">Home</a></li>
                   <li role="presentation"><a href="/about" className="active">About</a></li>

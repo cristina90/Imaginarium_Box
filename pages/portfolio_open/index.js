@@ -1,17 +1,21 @@
 
-
-
-
-
-
-
-
-
-
 import React, { PropTypes } from 'react';
 import Layout from '../../components/Layout';
 import s from './styles.css';
 import { title, html } from './index.md';
+
+
+class SlideImage extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return <img src={this.image_src} />
+  }
+
+}
+
 
 class Portfolio_openPage extends React.Component {
 
@@ -23,13 +27,24 @@ class Portfolio_openPage extends React.Component {
     document.title = title;
   }
 
+  currentSlide = new SlideImage({image_src: "/images/img2.jpg"});
+
+  changeSlide = function(target, e) {
+    e.preventDefault();
+    console.log(this.currentSlide);
+    this.currentSlide = new SlideImage({image_src: target});
+    console.log(this.currentSlide);
+  };
+
   render() {
     return (
       <Layout className="container col-md-12 col-sm-12 col-xs-12">
-        <div class="row relative">
+        <div>
           <div className={"col-xs-12 col-md-2 hidden-xs " + s["detail_product"]}>
             <div className ={"col-xs-4 col-md-12 col-centered " + s["product_image"]}>
-              <img src="/images/img2.jpg" />
+              <a href="#" onClick={this.changeSlide.bind(this, "/images/img2.jpg")}>
+                <img src="/images/img2.jpg" />
+              </a>
             </div>
             <div className ={"col-xs-4 col-md-12 col-centered " + s["product_image"]}>
               <img src="/images/img2.jpg" />
@@ -42,7 +57,7 @@ class Portfolio_openPage extends React.Component {
               <div className={s.main_image}>
                 <div className="product-image-main">
                 <div className="visible-lg visible-md hidden-xs">
-                      <img src="/images/img2.jpg" />
+                  {this.currentSlide}
                 </div>
               </div>
             </div>
