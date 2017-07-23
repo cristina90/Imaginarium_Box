@@ -15,23 +15,29 @@
   },
   {
     "path": "/portfolio",
-    "page": "./pages/portfolio"
+    "page": "./pages/portfolio",
+    "data": {
+      "articles": "GET json/portfolio.json"
+    }
+  },
+  {
+    "path": "/portfolio/:title",
+    "page": "./pages/portfolio_open",
+    "data": {
+      "articles": "GET ../json/portfolio.json"
+    }
   },
   {
     "path": "/haute_couture",
     "page": "./pages/haute_couture"
   },
   {
+    "path": "/haute_couture/:title",
+    "page": "./pages/haute_couture_open"
+  },
+  {
     "path": "/contact",
     "page": "./pages/contact"
-  },
-  {
-    "path": "/portfolio_open",
-    "page": "./pages/portfolio_open"
-  },
-  {
-    "path": "/haute_couture_open",
-    "page": "./pages/haute_couture_open"
   },
   {
     "path": "/tasks/:status(pending|completed)?",

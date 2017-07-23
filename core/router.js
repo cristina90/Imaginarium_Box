@@ -72,11 +72,12 @@ function resolve(routes, context) {
         }),
       ]).then(([Page, ...data]) => {
         const props = keys.reduce((result, key, i) => ({ ...result, [key]: data[i] }), {});
-        return <Page route={route} error={context.error} {...props} />;
+        return <Page route={route} routeParams={params} error={context.error} {...props} />;
       });
     }
 
-    return route.load().then(Page => <Page route={route} error={context.error} />);
+    return route.load().then(Page => <Page route={route} routeParams={params} error={context.error} />);
+
   }
 
   const error = new Error('Page not found');

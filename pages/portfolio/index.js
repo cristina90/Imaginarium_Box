@@ -21,101 +21,27 @@ class PortfolioPage extends React.Component {
 
   componentDidMount() {
     document.title = title;
+    console.log(this);
   }
 
   render() {
     return (
       <Layout className="container col-md-12 col-sm-12 col-xs-12">
-       <div className={s.work}>
-          <div className={"col-md-4 col-sm-6 col-xs-12 " + s["item"]}>
-            <a href="portfolio_open/">
-              <div className={s.picture}>
-                <img src="images/img2.jpg" />
-              </div>
-                <div className={s.project_name}>
-                  <h3>Description of the project</h3>
-                  <h6>Project Name</h6>
-                </div>
-            </a>
-          </div>
-          <div className={"col-md-4 col-sm-6 col-xs-12 " + s["item"]}>
-              <a href="portfolio_open/">
+        <div className={s.work}>
+          {this.props.articles.map(article =>
+            <div className={"col-md-4 col-sm-6 col-xs-12 " + s["item"]}>
+              <a href={"portfolio/"+article.title.replace(new RegExp(" ", 'g'), "_")}>
                 <div className={s.picture}>
-                  <img src="images/img2.jpg" />
+                  <img src={article.product_image} />
                 </div>
-                    <div className={s.project_name}>
-                      <h3>Description of the project</h3>
-                      <h6>Project Name</h6>
-                    </div>
-              </a>
-          </div>
-          <div className={"col-md-4 col-sm-6 col-xs-12 " + s["item"]}>
-                <a href="portfolio_open/">
-                  <div className={s.picture}>
-                    <img src="images/img2.jpg" />
-                    </div>
-                    <div className={s.project_name}>
-                      <h3>Description of the project</h3>
-                      <h6>Project Name</h6>
-                    </div>
-                  </a>
-                </div>
-                <div className={"col-md-4 col-sm-6 col-xs-12 " + s["item"]}>
-                  <a href="portfolio_open/">
-                    <div className={s.picture}>
-                      <img src="images/img2.jpg" />
-                      </div>
-                      <div className={s.project_name}>
-                        <h3>Description of the project</h3>
-                        <h6>Project Name</h6>
-                      </div>
-                    </a>
+                  <div className={s.project_name}>
+                    <h3>{article.short_description}</h3>
+                    <h6>{article.title}</h6>
                   </div>
-                  <div className={"col-md-4 col-sm-6 col-xs-12 " + s["item"]}>
-                    <a href="portfolio_open/">
-                      <div className={s.picture}>
-                        <img src="images/img2.jpg" />
-                        </div>
-                        <div className={s.project_name}>
-                          <h3>Description of the project</h3>
-                          <h6>Project Name</h6>
-                        </div>
-                      </a>
-                    </div>
-                    <div className={"col-md-4 col-sm-6 col-xs-12 " + s["item"]}>
-                      <a href="portfolio_open/">
-                        <div className={s.picture}>
-                          <img src="images/img2.jpg" />
-                          </div>
-                          <div className={s.project_name}>
-                            <h3>Description of the project</h3>
-                            <h6>Project Name</h6>
-                          </div>
-                        </a>
-                      </div>
-                      <div className={"col-md-4 col-sm-6 col-xs-12 " + s["item"]}>
-                        <a href="portfolio_open/">
-                          <div className={s.picture}>
-                            <img src="images/img2.jpg" />
-                            </div>
-                            <div className={s.project_name}>
-                              <h3>Description of the project</h3>
-                              <h6>Project Name</h6>
-                            </div>
-                          </a>
-                        </div>
-                        <div className={"col-md-4 col-sm-6 col-xs-12 " + s["item"]}>
-                          <a href="portfolio_open/">
-                            <div className={s.picture}>
-                              <img src="images/img2.jpg" />
-                              </div>
-                              <div className={s.project_name}>
-                                <h3>Description of the project</h3>
-                                <h6>Project Name</h6>
-                              </div>
-                            </a>
-                          </div>
-                        </div>
+              </a>
+            </div>
+          )}
+        </div>
       </Layout>
     );
   }

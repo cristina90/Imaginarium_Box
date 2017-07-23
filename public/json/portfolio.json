@@ -1,0 +1,20 @@
+[
+	{
+		"title": "Fashion dress title",
+		"short_description": "Fashion Dress",
+		"product_image": "/images/img1.jpg",
+		"all_images": ["/images/img1.jpg", "/images/img2.jpg", "/images/img3.jpg"]
+	},
+	{
+		"title": "Wedding dress title",
+		"short_description": "Wedding Dress",
+		"product_image": "/images/img2.jpg",
+		"all_images": ["/images/img1.jpg", "/images/img2.jpg", "/images/img3.jpg"]
+	},
+	{
+		"title": "Papilon suite",
+		"short_description": "Wedding Suite",
+		"product_image": "/images/img3.jpg",
+		"all_images": ["/images/img3.jpg", "/images/img2.jpg", "/images/img1.jpg"]
+	}
+]

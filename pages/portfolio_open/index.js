@@ -9,6 +9,17 @@ class Portfolio_openPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = props;
+    this.title = this.state.routeParams.title.replace(new RegExp("_", 'g'), " ");
+    this.state.articles.forEach(article => {
+      console.log(article.title)
+      if (article.title === this.title) {
+        this.currentState = article
+      }
+    });
+    this.setState({
+      currentSlide: this.currentState.all_images[0]
+    });
+
   }
 
   static propTypes = {
@@ -16,37 +27,27 @@ class Portfolio_openPage extends React.Component {
   };
 
   componentDidMount() {
-    document.title = title;
+    document.title = this.title;
   }
 
   changeSlide = function(target, e) {
     e.preventDefault();
-    console.log(this.state.currentSlide);
     this.setState({
       currentSlide: target
     });
-    console.log(this.state.currentSlide);
   };
 
   render() {
     return (
       <Layout className="container col-md-12 col-sm-12 col-xs-12">
-        <div className={"col-xs-12 col-md-2 hidden-xs " + s["detail_product"]}>
-          <div className={"col-xs-4 col-md-12 col-centered " + s["product_image"]}>
-            <a href="#" onClick={this.changeSlide.bind(this, "/images/img1.jpg")}>
-              <img src="/images/img1.jpg"/>
-            </a>
-          </div>
-          <div className={"col-xs-4 col-md-12 col-centered " + s["product_image"]}>
-            <a href="#" onClick={this.changeSlide.bind(this, "/images/img2.jpg")}>
-              <img src="/images/img2.jpg"/>
-            </a>
-          </div>
-          <div className={"col-xs-4 col-md-12 col-centered " + s["product_image"]}>
-            <a href="#" onClick={this.changeSlide.bind(this, "/images/img3.jpg")}>
-              <img src="/images/img3.jpg"/>
-            </a>
-          </div>
+        <div className={"col-xs-12 col-md-2 hidden-xs"}>
+          {this.currentState.all_images.map(image =>
+            <div className={"col-xs-4 col-md-12 col-centered " + s["product_image"]}>
+              <a href="#" onClick={this.changeSlide.bind(this, image)}>
+                <img src={image} />
+              </a>
+            </div>
+          )}
         </div>
         <div className="col-xs-12 col-md-6">
           <div className={s.main_image}>

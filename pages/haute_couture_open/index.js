@@ -20,6 +20,7 @@ class Haute_couture_openPage extends React.Component {
   };
 
   componentDidMount() {
+    console.log(this.props);
     document.title = title;
   }
 
